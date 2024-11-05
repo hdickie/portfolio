@@ -1,890 +1,254 @@
-<!DOCTYPE html>
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <title> Hume Dickie </title>
-      <meta http-equiv="imagetoolbar" content="no"/>
-      <!-- idk if i need this -->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <link rel="shortcut icon" href="http://www.existencia.org/pro/wp-content/themes/vigilance/images/favicon.ico"/>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hume Dickie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TQT3LJJNML"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  gtag('config', 'G-TQT3LJJNML');
-</script>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-   </head>
-   <style>
-      body {
-      font-size: 62.5%;
-      font-family: Georgia, "Times New Roman", Times, Serif;
-      line-height: 2.2em;
-      color: #333;
-      background-color: #fff;
-      }
-      a:link, a:visited { color: #772124; }
-      a:hover {
-      text-decoration: underline;
-      color: #58181b;
-      }
-      a:link {
-      text-decoration: none;
-      }
-      #wrapper {
-      width: 930px;
-      margin: 0 auto;
-      text-align: left;
-      }
-      #content {
-      float: left;
-      width: 600px;
-      padding: 20px 30px 20px 0;
-      }
-      #sidebar {
-      float: right;
-      width: 300px;
-      padding-bottom: 20px;
-      }
-      .thin-sidebar {
-      float: left;
-      width: 140px;
-      }
-      .spad { padding-right: 20px; }
-      #footer {
-      clear: both;
-      padding-top: 5px;
-      border-top: 1px solid #eee;
-      }
-      .clear:after, li.comment:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-      div.skip-content { display: none; }
-      #header {
-      padding: 20px 0 10px 0;
-      border-bottom: 5px solid #333;
-      min-height: 50px;
-      }
-      h1 {
-      padding: 0px;
-      margin:0px;
-      }
-      h1#title, div#title {
-      font-size: 4.6em;
-      font-weight: bold;
-      line-height: 1.3em;
-      position: relative;
-      bottom:0;
-      }
-      div#title-logo { padding-bottom: 10px; }
-      h1#title a:link, h1#title a:visited, div#title a:link, div#title a:visited	{ color: #444; }
-      h1#title a:hover, div#title a:hover { color: #772124; text-decoration: none; }
-      #description { float: left; }
-      #description h2 {
-      font-size: 1.2em;
-      font-weight: normal;
-      color: #666;
-      #nav {
-      float: right;
-      font-size: 1.5em;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      }
-      #nav ul { position: relative; }
-      #nav ul li {
-      float: right;
-      margin: 0 0 0 15px;
-      }
-      #nav ul li:first-child { margin: 0; }
-      #nav li a {
-      padding-top: .1em;
-      color: #333;
-      text-decoration: none;
-      }
-      #nav li.current_page_item a, #nav li.current_page_parent a, #nav li.current_page_ancestor a, #nav li.current-cat a, #nav li a:hover {
-      color: #772124;
-      text-decoration: none;
-      border-top: 4px solid #772124;
-      #menu { padding-bottom: 10px; }
-      #menu img { border: 2px solid #eee; }
-      .alert-box {
-      margin: 0 0 20px 0;
-      padding: 20px;
-      background: #f3f3f2;
-      border: 1px solid #e3e1db;
-      }
-      .post-header {
-      border-bottom: 4px double #eee;
-      padding-bottom: 7px;
-      }
-      .post-header h1, .post-header h2 {
-      font-size: 2.6em;
-      line-height: 1.1em;
-      font-weight: normal;
-      }
-      .post-header h1 a:link, .post-header h1 a:visited,.post-header h2 a:link, .post-header h2 a:visited	 { color: #444; }
-      .post-header h1 a:hover, .post-header h2 a:hover { color: #772124; }
-      .comments {
-      padding-top: 10px;
-      font-size: 1.3em;
-      color: #757575;
-      text-transform: uppercase;
-      }
-      .comments a {
-      display: block;
-      color: #757575;
-      padding: 0 0 0 25px;
-      background: url(../images/comments-bubble.gif) no-repeat 0 4px;
-      }
-      .comments a:hover {
-      color: #772124;
-      background-position: 0 -24px;
-      }
-      .post .date {
-      float: right;
-      padding-top: 10px;
-      color: #757575;
-      font-size: 1.6em;
-      font-weight: normal;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      text-transform: uppercase;
-      }
-      .post .date span {
-      color: #ddd;
-      font-weight: bold;
-      }
-      #single-date { float: none; }
-      .meta {
-      margin: 10px 0 20px 0;
-      font-size: 1.2em;
-      color: #666;
-      }
-      .meta a:link, .meta a:visited {
-      color: #666;
-      font-style: normal;
-      }
-      .meta a:hover { color: #772124; }
-      .tags {
-      float: right;
-      width: 400px;
-      text-align: right;
-      font-style: italic;
-      }
-      .entry a:link, .entry a:visited, .alert-box a:link, .alert-box a:visited { text-decoration: underline; }
-      .entry a:hover, .alert-box a:hover { text-decoration: none; }
-      .entry { font-size: 1.3em; }
-      .entry p { margin-bottom: 10px; }
-      .entry p.notice {
-      padding: 15px;
-      background-color: #fffbcc;
-      border: 1px solid #f8f4c7;
-      }
-      .alert-box p { margin: 10px 0 0 0; }
-      .entry h2, .entry h3, .entry h4 {
-      font-size: 1.3em;
-      padding: 15px 0 5px 0;
-      }
-      .entry h3 {
-      padding-top: 10px;
-      font-size: 1em;
-      }
-      .entry h4 {
-      padding-top: 10px;
-      font-size: .9em;
-      }
-      .alert-box h2, .alert-box h3, .alert-box h4 { margin: 0; padding: 0; }
-      pre {
-      margin: 10px 0;
-      padding: 1em 10px;
-      overflow: auto;
-      background-color: #f3f3f3;
-      color: #000;
-      }
-      code {
-      padding: 2px 3px;
-      font: 1.1em Consolas, Courier New, sans-serif;
-      background-color: #f3f3f3;
-      color: #000;
-      }
-      pre code { font-size: 1.3em; }
-      blockquote {
-      clear: both;
-      display: block;
-      padding: 20px 20px 10px 45px;
-      margin: 20px 0;
-      font-style: italic;
-      font-size: 1.2em;
-      color: #141310;
-      background: #e7e6e2 url(../images/blockquote.gif) no-repeat top left;
-      }
-      .entry ul, .c-body ul { margin: 0 0 10px 10px; }
-      .entry ul li, .c-body ul li {
-      display: block;
-      margin: 5px 0 0 0;
-      padding: 0 0 0 17px;
-      background: url(../images/list-star.gif) no-repeat 0 .3em;
-      }
-      .entry ol, .c-body ol { margin: 0 0 15px 30px; }
-      .entry ol li ol li, .c-body ol li ol li {
-      font-size: .9em;
-      list-style-type: lower-roman;
-      }
-      .entry ol li, .c-body ol li {
-      margin: 10px 0 0 0;
-      list-style-type: decimal;
-      list-style-position: outside;
-      }
-      .navigation {
-      padding: 10px 0;
-      font-size: 1.3em;
-      }
-      .index { padding: 0; }
-      .float-quote {
-      float: left;
-      width: 300px;
-      padding: 15px;
-      margin: 10px 10px 0 0;
-      background: #eaeaea;
-      border-top: 4px solid #333;
-      border-bottom: 4px solid #333;
-      }
-      .entry .float-quote p {
-      margin: 0;
-      padding: 0 0 0 40px;
-      font-size: 1.2em;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      line-height: 1.3em;
-      background: url(../images/float-quote.gif) no-repeat top left;
-      }
-      .highlight-box {
-      float: right;
-      margin: 0 0 10px 10px;
-      width: 200px;
-      padding: 10px;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      border-top: 8px solid #000;
-      background: #772124;
-      color: #fff;
-      }
-      .highlight-box a:link, .highlight-box a:visited {
-      color: #fff;
-      text-decoration: underline;
-      }
-      .highlight-box a:hover { text-decoration: none; }
-      .entry .highlight-box p {
-      margin: 10px 0;
-      line-height: 1.4em;
-      font-size: 1.1em;
-      }
-      .entry .highlight-box ul li {
-      font-size: 1.1em;
-      background: url(../images/list-square.gif) no-repeat 0 .4em;
-      }
-      .entry .highlight-box h2, .entry .highlight-box h3, .entry .highlight-box h4 {
-      margin: 0;
-      padding: 0;
-      color: #fff;
-      }
-      .highlight-box h2 { text-transform: uppercase; }
-      .post-footer {
-      padding-bottom: 2px;
-      margin: 0 0 30px 0;
-      font-size: 1.1em;
-      font-style: italic;
-      text-align: right;
-      color: #666;
-      border-bottom: 1px solid #eee;
-      }
-      .post-footer a:link, .post-footer a:visited {
-      color: #333;
-      font-style: normal;
-      }
-      .post-footer a:hover { color: #772124; }
-      h1.pagetitle, h2.pagetitle {
-      margin-bottom: 20px;
-      padding-bottom: 7px;
-      font-size: 2.6em;
-      line-height: 1.1em;
-      border-bottom: 4px double #eee;
-      }
-      img.archive-comment {
-      float: right;
-      margin: 0 .5em .5em 0;
-      }
-      .entries {
-      font-size: 1.3em;
-      clear: both;
-      }
-      .entries ul {
-      margin: 0;
-      padding: 0 0 1px 0;
-      background: transparent url(../images/archives-dotted-line.gif) repeat-x bottom left;
-      }
-      .entries ul li {
-      padding-top: 1px;
-      background: transparent url(../images/archives-dotted-line.gif) repeat-x top left;
-      }
-      .entries ul li a {
-      display: block;
-      margin: 0;
-      padding: 7px 0;
-      }
-      .entries ul li a:hover {
-      background-color: #F8F8F7;
-      text-decoration: none;
-      }
-      .entries span {
-      display: block;
-      text-align: right;
-      }
-      .entries span.archdate, .entries a:hover span.archdate	{
-      float: left;
-      margin-right: 3em;
-      padding-left: .5em;
-      width: 3em;
-      color: #666;
-      }
-      .entries span.comments_number{
-      float: right;
-      margin-right: .5em;
-      width: 3em;
-      color: #666;
-      }
-      #sidebar-image { padding-top: 20px; }
-      #sidebar-image { font-size: 1.3em; }
-      #sidebar-image p {
-      margin-bottom: 15px;
-      line-height: 1.6em;
-      }
-      h2.widgettitle {
-      padding: 25px 0 3px 0;
-      font-size: 1.4em;
-      font-weight: normal;
-      text-transform: uppercase;
-      letter-spacing: 1.05pt;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      border-bottom: 1px solid #eee;
-      }
-      ul li.widget ul {
-      margin: 0;
-      font-size: 1.4em;
-      }
-      ul li.widget ul li ul {
-      margin-left: 5px;
-      font-size: 1em;
-      }
-      ul li.widget ul li {
-      padding: 8px 0;
-      border-bottom: 1px solid #eee;
-      }
-      ul li.widget ul li ul li { border-bottom: none; }
-      ul li.widget ul li a {
-      display: block;
-      padding: 0 0 0 15px;
-      background: url(../images/list-item.gif) no-repeat 0 6px;
-      }
-      ul li.widget ul li a:hover { background-position: 0 -136px; }
-      ul li.widget ul#recentcomments li a {
-      padding: 0;
-      background: none;
-      }
-      div.textwidget p {
-      font-size: 1.3em;
-      margin: 10px 0 0 0;
-      }
-      li.widget select { margin-top: 10px; }
-      #search_form input { margin: 10px 0 0 0; }
-      #search_form input {
-      padding: 4px 2px;
-      width: 132px;
-      border: 2px solid #acacac;
-      border-bottom: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      background: #f4f4f4;
-      color: #888;
-      }
-      #search_form input:focus { background: #fff; }
-      #search_form input#searchsubmit { padding: 2px 10px; }
-      .comment-number {
-      display: block;
-      font-size: 1.3em;
-      padding: 0 0 10px 30px;
-      background: url(../images/comments-bubble-big.gif) no-repeat 0 .1em;
-      }
-      .comment-number span {
-      font-size: 1.3em;
-      color: #777;
-      }
-      a#leavecomment { padding-left: 10px; }
-      li.comment { padding: 20px 0 0 0; }
-      #comments ul.children {
-      margin: 10px 0 0 96px;
-      clear: both;
-      }
-      div.c-grav {
-      float: left;
-      width: 60px;
-      margin: 0;
-      text-align: right;
-      }
-      div.c-grav img {
-      border: 4px solid #e3e3e3;
-      -moz-border-radius: 4px;
-      -webkit-border-radius: 4px;
-      }
-      div.c-body {
-      float: right;
-      width: 474px;
-      font-size: 1.3em;
-      background: #f3f3f3;
-      padding: 20px 20px 0 20px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-      }
-      ul.children div.c-body { width: 378px; }
-      div.c-body p { margin: 10px 0 0 0; }
-      div.c-head { font-weight: bold; }
-      span.asterisk {
-      float: right;
-      color: #772124;
-      font-size: 2.2em;
-      }
-      div.c-date {
-      color: #bbb;
-      font-size: .9em;
-      line-height: 0;
-      padding: 10px 0 5px 0;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      font-weight: bold;
-      }
-      .c-permalink a:link, .c-permalink a:visited {
-      margin-left: 5px;
-      color: #ccc;
-      font-size: .7em;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      text-transform: uppercase;
-      }
-      div.reply, div.cancel-comment-reply { float: right; }
-      div.reply { padding: 10px 0; }
-      div.reply a:link, div.reply a:visited {
-      color: #aaa;
-      font-size: .9em;
-      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
-      text-transform: uppercase;
-      border-bottom: 1px dotted;
-      }
-      div.reply a:hover {
-      border-bottom: 1px solid;
-      text-decoration: none;
-      }
-      /*Form
-      ---------------------------------------*/
-      form#commentform { margin-bottom: 20px; }
-      #respond { font-size: 1.5em; }
-      h4#postcomment {
-      margin: 20px 0;
-      padding: 0 0 5px 0;
-      font-size: 1.2em;
-      color: #555;
-      border-bottom: 1px solid #eee;
-      }
-      form#commentform label.comment-field {
-      display: block;
-      margin: 10px 0 5px 0;
-      }
-      input.text-input, form#commentform textarea {
-      padding: 7px;
-      background: #f8f8f8;
-      font-family: inherit;
-      font-size: .9em;
-      border: 1px solid #e6e6e6;
-      width: 591px;
-      }
-      input#author, input#email, input#url { width: 350px; }
-      form#commentform input:focus, form#commentform textarea:focus { background: #fff; }
-      form#commentform input#submit {
-      padding: 5px;
-      width: 150px;
-      }
-      form#commentform p.guidelines {
-      margin: 10px 0;
-      font-size: .8em;
-      color: #777;
-      }
-      p.subscribe-to-comments, p.comments-rss {
-      margin: 0 0 10px 0;
-      font-size: .9em;
-      }
-      p.comments-rss a {
-      padding: 0 0 0 19px;
-      background: url(../images/feed-icon.png) no-repeat 0 .15em;
-      p.note {
-      font-style: italic;
-      font-size: 1.3em;
-      }
-      .entry img.alignleft, .entry img.alignright, .entry img.aligncenter { border: 2px solid #eee; }
-      .noborder { border: none; }
-      .entry .alignright, .entry .alignright .float-quote { margin: 0 0 10px 15px; }
-      .entry .alignleft, .entry .alignleft .highlight-box { margin: 0 15px 10px 0; }
-      .wp-caption p {
-      font-style: italic;
-      color: #888;
-      }
-      #footer {
-      color: #666;
-      font-size: 1.1em;
-      }
-      #footer p.right { float: right; }
-      #footer a:link, #footer a:visited {
-      color: #666;
-      text-decoration: underline;
-      }
-      #footer a:hover { color: #772124; }
-      /* Style the tab */
-      .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-      }
-      /* Style the buttons that are used to open the tab content */
-      .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      }
-      /* Change background color of buttons on hover */
-      .tab button:hover {
-      background-color: #ddd;
-      }
-      /* Create an active/current tablink class */
-      .tab button.active {
-      background-color: #ccc;
-      }
-      /* Style the tab content */
-      .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-      }
-      .tabcontent {
-      animation: fadeEffect 1s; /* Fading effect takes 1 second */
-      }
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Hume Dickie</strong> For friends, fun, and fiercely good Anki decks</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> <!-- todo -->
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> <!-- todo -->
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> <!-- todo -->
+									</ul>
+								</header>
 
-      /* Go from zero to full opacity */
-      @keyframes fadeEffect {
-      from {opacity: 0;}
-      to {opacity: 1;}
-      }
-   </style>
-   <body>
-      <div id="wrapper">
-         <div id="header" class="clear">
-            <h1 id="title" >
-               <a href="file:///Users/hume/rdwd/professional-website-hdickie-20201210.html">Hume Dickie</a>
-            </h1>
-            <div id="description">
-               <h2>Marketing Systems Analyst skilled in data engineering</h2>
-            </div>
-            <!--end description-->
-            <div id="tab" class="nav2" style="float:right;">
-               <a class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen" style = "color: #772124;font-size:16px;">Home
-               </a>
-               <a class="tablinks" onclick="openTab(event, 'Experience')" style = "color: #772124;font-size:16px;padding-left:15px;">
-               Experience
-               </a>
-               <a class="tablinks" onclick="openTab(event, 'Projects')" style = "color: #772124;font-size:16px;padding-left:15px;">
-               Projects
-               </a>
-               <a class="tablinks" onclick="openTab(event, 'Data')" style = "color: #772124;font-size:16px;padding-left:15px;padding-right:20px;">
-               Data
-               </a>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>SJCC Anatomy</h1>
+											<p>Browse the decks I have made for class</p>
+										</header>
+										<p>I turn all the multiple choice HW Qs and pictures from the textbook into Anki decks. You can download them here.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/Anatomy_Physiology_Thumbnail.jpg" alt="" />
+									</span>
+								</section>
 
+							<!-- Section 
+								<section>
+									<header class="major">
+										<h2>Erat lacinia</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Portitor ullamcorper</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-paper-plane"></span>
+											<div class="content">
+												<h3>Sapien veroeros</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-rocket"></span>
+											<div class="content">
+												<h3>Quam lorem ipsum</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Sed magna finibus</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section> -->
 
-            </div>
-            <!--end nav-->
+							
+								<section>
+									<!--
+									<header class="major">
+										<h2>Ipsum sed dolor</h2>
+									</header>
+								-->
+									<div class="posts">
+										<!--
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Nulla amet dolore</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Tempus ullamcorper</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									-->
+									</div>
+								</section>
 
+						</div>
+					</div>
 
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
 
-         </div>
-         <!-- Tab content -->
-         <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>This is my Homepage.</p>
+							<!-- Search -->
+								<!--<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>-->
 
-         <div id="content" class="pad">
-            <div id="post-328" class="post-328 post type-post status-publish format-standard hentry category-uncategorized">
-               <div class="post-header">
-                  <h2>
-                     <a href="http://www.existencia.org/pro/?p=328" rel="bookmark" title="Title">Homepage Post Title</a>
-                  </h2>
-                  <div class="date">
-                     <span>2020</span>
-                     December 10
-                  </div>
-                  <div class="comments">
-                     <a href="URL#respond">Leave a comment</a>
-                  </div>
-               </div>
-               <!--end post header-->
-               <div class="entry clear">
-                  <p>
-                     content
-                  </p>
-               </div>
-               <!--end entry-->
-               <div class="post-footer">
-                  <p>
-                     from &rarr; 
-                     <a href="http://www.existencia.org/pro/?cat=1" rel="category">Uncategorized</a>
-                  </p>
-               </div>
-               <!--end post footer-->
-            </div>
-            <!--end post-->
-         </div>
+							<!-- Menu -->
+								<!--<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>-->
 
-         </div>
-         <div id="Experience" class="tabcontent">
-            <h3>Experience</h3>
-            <p>This is my experience.</p>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Other stuff I am doing</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/celestial_weather_thumbnail.jpeg" alt="Celestial weather thumbnail" /></a>
+											<p>Celestial weather dashboard.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/expense_forecast_thumbnail.jpeg" alt="Expense Forecast thumbnail" /></a>
+											<p>Expense Forecast python module.</p>
+										</article>
+										
+										<article>
+											<a href="#" class="image"><img src="images/Hume Wedding Pic.jpg" alt="Selfie at Evan and Lawrence's Wedding" /></a>
+											<p>Bein' cute.</p>
+										</article>
+									</div>
+									<!--<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>-->
+								</section>
 
-         <div id="content" class="pad">
-            <div id="post-328" class="post-328 post type-post status-publish format-standard hentry category-uncategorized">
-               <div class="post-header">
-                  <h2>
-                     <a href="http://www.existencia.org/pro/?p=328" rel="bookmark" title="Title">Experience Post Title</a>
-                  </h2>
-                  <div class="date">
-                     <span>2020</span>
-                     December 10
-                  </div>
-                  <div class="comments">
-                     <a href="URL#respond">Leave a comment</a>
-                  </div>
-               </div>
-               <!--end post header-->
-               <div class="entry clear">
-                  <p>
-                     content
-                  </p>
-               </div>
-               <!--end entry-->
-               <div class="post-footer">
-                  <p>
-                     from &rarr; 
-                     <a href="http://www.existencia.org/pro/?cat=1" rel="category">Uncategorized</a>
-                  </p>
-               </div>
-               <!--end post footer-->
-            </div>
-            <!--end post-->
-         </div>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>If we are in a class together, there is a 100% chance I am making Anki decks for it and I am down to share them. If there are not Anki decks on the site for a class we are taking together, I probably just haven't posted them. Feel free to text me and I'll upload them here. Don't email be because I never check my email.</p>
+									<ul class="contact">
+										<!--<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>-->
+										<li class="icon solid fa-phone">(530) 383-6572</li>
+										<!--<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>-->
+									</ul>
+								</section>
 
-         </div>
-         <div id="Projects" class="tabcontent">
-            <h3>Projects</h3>
-            <p>This is all my projects.</p>
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Hume Dickie Portfolio. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
 
-         <div id="content" class="pad">
-            <div id="post-328" class="post-328 post type-post status-publish format-standard hentry category-uncategorized">
-               <div class="post-header">
-                  <h2>
-                     <a href="http://www.existencia.org/pro/?p=328" rel="bookmark" title="Title">Project Post Title</a>
-                  </h2>
-                  <div class="date">
-                     <span>2020</span>
-                     December 10
-                  </div>
-                  <div class="comments">
-                     <a href="URL#respond">Leave a comment</a>
-                  </div>
-               </div>
-               <!--end post header-->
-               <div class="entry clear">
-                  <p>
-                     content
-                  </p>
-               </div>
-               <!--end entry-->
-               <div class="post-footer">
-                  <p>
-                     from &rarr; 
-                     <a href="http://www.existencia.org/pro/?cat=1" rel="category">Uncategorized</a>
-                  </p>
-               </div>
-               <!--end post footer-->
-            </div>
-            <!--end post-->
-         </div>
+						</div>
+					</div>
 
-         </div>
-         <div id="Data" class="tabcontent">
-            <h3>Data</h3>
-            <p>This is my data.</p>
+			</div>
 
-         <div id="content" class="pad">
-            <div id="post-328" class="post-328 post type-post status-publish format-standard hentry category-uncategorized">
-               <div class="post-header">
-                  <h2>
-                     <a href="http://www.existencia.org/pro/?p=328" rel="bookmark" title="Title">Data Post Title</a>
-                  </h2>
-                  <div class="date">
-                     <span>2020</span>
-                     December 10
-                  </div>
-                  <div class="comments">
-                     <a href="URL#respond">Leave a comment</a>
-                  </div>
-               </div>
-               <!--end post header-->
-               <div class="entry clear">
-                  <p>
-                     content
-                  </p>
-               </div>
-               <!--end entry-->
-               <div class="post-footer">
-                  <p>
-                     from &rarr; 
-                     <a href="http://www.existencia.org/pro/?cat=1" rel="category">Uncategorized</a>
-                  </p>
-               </div>
-               <!--end post footer-->
-            </div>
-            <!--end post-->
-         </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-         </div>
-
-
-
-
-
-         <div id="sidebar">
-            <div id="sidebar-image">
-               <center>
-                  <img src="./media/selfie.png" width="300" height="300" alt="Hume Dickie"/>
-               </center>
-            </div>
-            <!--end sidebar-image-->
-            <h2 class="widgettitle">Hume Dickie</h2>
-            <div id="rss-feed" class="clear">
-               <p>
-               <p style="margin-bottom: 10px">Mini Bio - Current</p>
-               <p style="margin-bottom: 10px"> Mini Bio - Some Background
-               </p>
-               <table style="font-size:1.2em">
-                  <tr>
-                     <th>Phone:</th>
-                     <td>530-383-6572</td>
-                  </tr>
-                  <tr>
-                     <th>Email:</th>
-                     <td>
-                        <!--<img src="link to image of email address- clever!" width="130"/>-->
-                        hume.dickie@live.com
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>Twitter:</th>
-                     <td>
-                        <a href="twitter link">twitterhandle</a>
-                     </td>
-                  </tr>
-               </table>
-               </p>
-               <a class="rss" href="rssfeedlink">RSS Feed</a>
-            </div>
-            <ul>
-               <li id="search-3" class="widget widget_search">
-                  <h2 class="widgettitle">Search</h2>
-                  <form method="get" id="search_form" action="url">
-                     <div>
-                        <input type="text" value="" name="s" id="s" onfocus="if (this.value == '' ) {this.value = '';}" onblur="if (this.value == '' ) {this.value = '';}"/>
-                        <input type="hidden" value="Search"/>
-                     </div>
-                  </form>
-               </li>
-               <li id="linkcat-5" class="widget widget_links">
-                  <h2 class="widgettitle">Groups</h2>
-                  <ul class='xoxo blogroll'>
-                     <li>
-                        <a href="link" target="_blank">A group</a>
-                     </li>
-                  </ul>
-               </li>
-               <li id="linkcat-6" class="widget widget_links">
-                  <h2 class="widgettitle">Projects</h2>
-                  <ul class='xoxo blogroll'>
-                     <li>
-                        <a href="link" title="Project Title" target="_blank">Project Title</a>
-                     </li>
-                  </ul>
-               </li>
-               <li id="categories-3" class="widget widget_categories">
-                  <h2 class="widgettitle">Categories</h2>
-                  <ul>
-                     <li class="cat-item cat-item-9">
-                        <a href="404">Activities</a>
-                     </li>
-                     <li class="cat-item cat-item-17">
-                        <a href="404">Communities</a>
-                     </li>
-                     <li class="cat-item cat-item-7">
-                        <a href="404">Data</a>
-                     </li>
-                     <li class="cat-item cat-item-8">
-                        <a href="404">Essays</a>
-                     </li>
-                     <li class="cat-item cat-item-14">
-                        <a href="404">Presentations</a>
-                     </li>
-                     <li class="cat-item cat-item-13">
-                        <a href="404">References</a>
-                     </li>
-                     <li class="cat-item cat-item-4">
-                        <a href="404">Software</a>
-                     </li>
-                     <li class="cat-item cat-item-1">
-                        <a href="404">Uncategorized</a>
-                     </li>
-                  </ul>
-               </li>
-            </ul>
-         </div>
-
-
-         <div id="footer">
-            <p class="right">Copyright 2020 Hume Dickie</p>
-         </div>
-      </div>
-   </body>
-   <script type="text/javascript">
-      document.getElementById("defaultOpen").click();
-      	
-      function openTab(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-      
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-      
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-      
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-   </script>
+	</body>
 </html>
